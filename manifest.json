@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "PhishNet",
+	"version": "1.0.0",
+	"description": "An advanced web extension designed to detect and mark phishing emails on Gmail and Outlook web clients, enhancing your online security.",
+	"author": "André Vital",
+	"action": {
+		"default_popup": "index.html"
+	},
+	"permissions": ["tabs", "storage", "activeTab", "scripting"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"host_permissions": ["http://*/*", "https://*/*"]
+}
